@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+    background-image: url(animation.gif), url(animation.gif), url(animation.gif), url(animation.gif);
+    background-repeat: no-repeat;
+    background-size: 50% 50%; /* Set background size to cover half of the viewport */
+    background-position: top left, top right, bottom left, bottom right; /* Position GIF in each quadrant */
+    background-attachment: fixed; /* Ensure the background GIF remains fixed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginContainer {
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid #dedede;
+    background-color: #f2f2f2;
+}
+
+input[type="submit"] {
+    background-color: #0099;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
